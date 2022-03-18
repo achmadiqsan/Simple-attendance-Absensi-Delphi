@@ -1,0 +1,59 @@
+object fUtama: TfUtama
+  Left = -53
+  Top = 140
+  Width = 1032
+  Height = 746
+  Caption = 'DISNAKERTRANS PROV. KALIMANTAN TENGAH'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    Left = 40
+    Top = 16
+    object ABSEN1: TMenuItem
+      Caption = 'Menu'
+      object formMenu: TMenuItem
+        Caption = 'Mulai Absen'
+        OnClick = formMenuClick
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object EntryPegawai1: TMenuItem
+        Caption = 'Entry Pegawai'
+        OnClick = EntryPegawai1Click
+      end
+      object KELUAR1: TMenuItem
+        Caption = 'Data Pegawai'
+        OnClick = KELUAR1Click
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Laporan1: TMenuItem
+        Caption = 'Laporan'
+        object Absensi1: TMenuItem
+          Caption = 'Absensi'
+          OnClick = Absensi1Click
+        end
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object Keluar2: TMenuItem
+        Caption = 'Keluar'
+        ShortCut = 46
+        OnClick = Keluar2Click
+      end
+    end
+  end
+end
